@@ -1,20 +1,28 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<?php include 'functions.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - MyShop</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php include("navbar.php"); ?>
-
-    <h1>Contact Us</h1>
-    <p>You can contact us at: contact@example.com</p>
-    <div class="navbar">
-    <a href="index.php">Products</a>
-    <a href="about.php">About</a>
-    <a href="contact.php">Contact</a>
-</div>
-<hr>
-
+<?php renderNav("contact"); ?>
+<section class="content">
+<h1>Contact Us</h1>
+<form class="contact-form" action="#" method="post">
+<label>Name</label>
+<input type="text" name="name" required>
+<label>Email</label>
+<input type="email" name="email" required>
+<label>Message</label>
+<textarea name="message" rows="5" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+<footer>
+<p>&copy; 2025 MyShop. All rights reserved.</p>
+</footer>
 </body>
 </html>

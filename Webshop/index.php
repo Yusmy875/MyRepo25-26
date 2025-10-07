@@ -1,26 +1,39 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<?php include 'functions.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Products</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyShop - Home</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php ?> 
-    <?php include("navbar.php"); ?>
-
-    <h1>Our Products</h1>
-    <p>Welcome to our home page! Here are some of our products:</p>
-    <ul>
-        <li>Product 1 - Description</li>
-        <li>Product 2 - Description</li>
-        <li>Product 3 - Description</li>
-    </ul>
-    <div class="navbar">
-    <a href="index.php">Products</a>
-    <a href="about.php">About</a>
-    <a href="contact.php">Contact</a>
+<?php renderNav("home"); ?>
+<section class="hero">
+<h1>Welcome to MyShop</h1>
+<p>Quality products delivered to your door.</p>
+<a href="#" class="btn">Shop Now</a>
+</section>
+<section class="products">
+<h2>Featured Products</h2>
+<div class="product-grid">
+<div class="product-card">
+<img src="https://via.placeholder.com/150" alt="Product 1">
+<h3>Product 1</h3>
+<p>$29.99</p>
+<button>Add to Cart</button>
 </div>
-<hr>
-
+<div class="product-card">
+<img src="https://via.placeholder.com/150" alt="Product 2">
+<h3>Product 2</h3>
+<p>$39.99</p>
+<button>Add to Cart</button>
+</div>
+</div>
+</section>
+<footer>
+<p>&copy; 2025 MyShop. All rights reserved.</p>
+</footer>
 </body>
 </html>
+ 
