@@ -18,13 +18,13 @@
 <h2>Featured Products</h2>
 <div class="product-grid">
 <div class="product-card">
-<img src="https://via.placeholder.com/150" alt="Product 1">
+<img src="" alt="Product 1">
 <h3>Product 1</h3>
 <p>$29.99</p>
 <button>Add to Cart</button>
 </div>
 <div class="product-card">
-<img src="https://via.placeholder.com/150" alt="Product 2">
+<img src="" alt="Product 2">
 <h3>Product 2</h3>
 <p>$39.99</p>
 <button>Add to Cart</button>
