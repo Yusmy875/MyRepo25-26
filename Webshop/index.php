@@ -35,7 +35,7 @@ $products = [
 ?>
 
 <section class="hero">
-<h1>Welcome to MyShop</h1>
+<h1>Welcome to OrangeShop</h1>
 <p>Quality products delivered to your door.</p>
 <a href="#" class="btn">Shop Now</a>
 </section>
