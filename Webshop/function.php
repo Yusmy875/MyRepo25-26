@@ -1,15 +1,26 @@
 <?php
-function renderNav($activePage = '') {
+function renderNav($activePage = '', $menuItems = []) {
+   // Default menu if none provided
+   if (empty($menuItems)) {
+      $menuItems = [
+         'home' => ['label' => 'Home', 'href' => 'index.php'],
+         'about' => ['label' => 'About', 'href' => 'about.php'],
+         'contact' => ['label' => 'Contact', 'href' => 'contact.php'],
+      ];
+   }
+
    echo '
 <header>
 <div class="logo">
 <a href="index.php">MyShop</a>
 </div>
 <nav>
-<ul>
-<li><a href="index.php" ' . ($activePage == "home" ? 'class="active"' : '') . '>Home</a></li>
-<li><a href="about.php" ' . ($activePage == "about" ? 'class="active"' : '') . '>About</a></li>
-<li><a href="contact.php" ' . ($activePage == "contact" ? 'class="active"' : '') . '>Contact</a></li>
+<ul>';
+   foreach ($menuItems as $key => $item) {
+      $activeClass = ($activePage == $key) ? 'class="active"' : '';
+      echo '<li><a href="' . htmlspecialchars($item['href']) . '" ' . $activeClass . '>' . htmlspecialchars($item['label']) . '</a></li>';
+   }
+   echo '
 </ul>
 </nav>
 </header>
