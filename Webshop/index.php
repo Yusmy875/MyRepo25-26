@@ -9,6 +9,31 @@
 </head>
 <body>
 <?php renderNav("home"); ?>
+
+<?php
+// Array of products
+$products = [
+    [
+        'img' => '',
+        'alt' => 'Product 1',
+        'name' => 'Product 1',
+        'price' => 29.99
+    ],
+    [
+        'img' => '',
+        'alt' => 'Product 2',
+        'name' => 'Product 2',
+        'price' => 39.99
+    ],
+    [
+        'img' => '',
+        'alt' => 'Product 3',
+        'name' => 'Product 3',
+        'price' => 49.99
+    ]
+];
+?>
+
 <section class="hero">
 <h1>Welcome to MyShop</h1>
 <p>Quality products delivered to your door.</p>
@@ -17,18 +42,14 @@
 <section class="products">
 <h2>Featured Products</h2>
 <div class="product-grid">
+<?php foreach ($products as $product): ?>
 <div class="product-card">
-<img src="" alt="Product 1">
-<h3>Product 1</h3>
-<p>$29.99</p>
-<button>Add to Cart</button>
+    <img src="<?php echo htmlspecialchars($product['img']); ?>" alt="<?php echo htmlspecialchars($product['alt']); ?>">
+    <h3><?php echo htmlspecialchars($product['name']); ?></h3>
+    <p>$<?php echo number_format($product['price'], 2); ?></p>
+    <button>Add to Cart</button>
 </div>
-<div class="product-card">
-<img src="" alt="Product 2">
-<h3>Product 2</h3>
-<p>$39.99</p>
-<button>Add to Cart</button>
-</div>
+<?php endforeach; ?>
 </div>
 </section>
 <footer>
