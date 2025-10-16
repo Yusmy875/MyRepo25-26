@@ -14,19 +14,19 @@
 // Array of products
 $products = [
     [
-        'img' => 'pictures/madarin.jpg',
-        'alt' => 'Product 1',
+        "img" => "pictures/madarin.webp",
+        "alt" => "Product 1",
         'name' => 'Product 1',
         'price' => 29.99
     ],
     [
-        'img' => 'pictures/product2.jpg',
+        'img' => 'pictures/orange.webp',
         'alt' => 'Product 2',
         'name' => 'Product 2',
         'price' => 39.99
     ],
     [
-        'img' => 'pictures/product3.jpg',
+        'img' => 'pictures/red-orange.webp',
         'alt' => 'Product 3',
         'name' => 'Product 3',
         'price' => 49.99
