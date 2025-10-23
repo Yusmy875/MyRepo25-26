@@ -46,7 +46,7 @@ $products = [
 <div class="product-card">
     <img src="<?php echo htmlspecialchars($product['img']); ?>" alt="<?php echo htmlspecialchars($product['alt']); ?>">
     <h3><?php echo htmlspecialchars($product['name']); ?></h3>
-    <p>$<?php echo number_format($product['price'], 2); ?></p>
+    <p><?php echo number_format($product['price'], 2); ?></p>
     <button>Add to Cart</button>
 </div>
 <?php endforeach; ?>
