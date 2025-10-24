@@ -29,8 +29,8 @@
     
     ?>
     <option value="<?php echo $car; ?>"><?php echo ucfirst($car); ?></option>
-<?php 
- }
+<?php  §1
+    }
 ?>
 </select> <br><br>
   <input type="submit" value="Submit">
