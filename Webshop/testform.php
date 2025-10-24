@@ -29,7 +29,7 @@
     
     ?>
     <option value="<?php echo $car; ?>"><?php echo ucfirst($car); ?></option>
-<?php  §1
+<?php  
     }
 ?>
 </select> <br><br>
